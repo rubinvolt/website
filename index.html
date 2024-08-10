@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Definiert die Sprache der Webseite als Deutsch -->
+<head>
+    <meta charset="UTF-8"> <!-- Setzt das Zeichenformat auf UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Passt die Seite an die Gerätegröße an -->
+    <title>Responsive Seite</title> <!-- Titel der Webseite -->
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkt das externe CSS-Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Verlinkt Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Verlinkt Font Awesome Icons -->
+</head>
+<body style="background-color: #F6F5F1;"> <!-- Setzt die Hintergrundfarbe des Körpers -->
+
+    <header> <!-- Definiert den Kopfbereich der Seite -->
+
+        <div class="logo"> 
+            <!-- Füge das Link-Tag hinzu und belasse das Styling wie es ist -->
+            <a href="https://www.deine-linkadresse.de" style="text-decoration: none; color: inherit;">Rubin</a>
+        </div> <!-- Ende des Containers für das Logo -->
+
+        <nav> <!-- Navigationsleiste -->
+            <ul class="nav-links"> <!-- Liste der Navigationslinks -->
+                <li><a href="#home">Home</a></li> <!-- Link zur Startseite -->
+                <li><a href="#about">Über uns</a></li> <!-- Link zur "Über uns" Seite -->
+                <li><a href="#services">Dienstleistungen</a></li> <!-- Link zur Dienstleistungsseite -->
+                <li><a href="#contact">Kontakt</a></li> <!-- Link zur Kontaktseite -->
+            </ul>
+        </nav>
+        <div class="social-icons"> <!-- Bereich für Social-Media-Icons -->
+            <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a> <!-- GitHub Icon -->
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a> <!-- Twitter Icon -->
+            <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a> <!-- YouTube Icon -->
+        </div>
+        <div class="hamburger" id="hamburger"> <!-- Hamburger-Icon für mobile Navigation -->
+            <div class="bar"></div> <!-- Erste Linie des Hamburger-Icons -->
+            <div class="bar"></div> <!-- Zweite Linie des Hamburger-Icons -->
+            <div class="bar"></div> <!-- Dritte Linie des Hamburger-Icons -->
+        </div>
+    </header>
+
+    <main> <!-- Hauptinhalt der Seite -->
+        <section id="home"> <!-- Bereich für die Startseite -->
+            <h1>Willkommen auf unserer Seite</h1> <!-- Hauptüberschrift der Seite -->
+            <p>Hier finden Sie alle Informationen über uns und unsere Dienstleistungen.</p> <!-- Einführender Text -->
+        </section>
+        
+        <section class="welcome"> <!-- Begrüßungsbereich -->
+            <h1 class="welcome-heading">Willkommen bei Rubin</h1> <!-- Überschrift des Begrüßungsbereichs -->
+            <p class="welcome-text"> <!-- Text im Begrüßungsbereich -->
+                Wir gestalten Ihre Zukunft in der Welt der Elektronik und IT. Unsere Projekte umfassen die neuesten Technologien und bieten innovative Lösungen, die speziell auf Ihre Bedürfnisse zugeschnitten sind. Ob es sich um die Entwicklung von Smart Home Geräten, die Implementierung von IT-Sicherheitslösungen oder die Gestaltung von benutzerfreundlichen Softwareanwendungen handelt, wir sind stets bestrebt, Ihnen die besten Ergebnisse zu liefern. Mit einem erfahrenen Team von Ingenieuren und IT-Spezialisten arbeiten wir daran, Ihre Visionen zu verwirklichen und Sie auf dem neuesten Stand der Technik zu halten. Entdecken Sie unsere Projekte, die die Grenzen der Technologie erweitern und neue Maßstäbe setzen. Lassen Sie uns gemeinsam die Zukunft gestalten! Hier finden Sie weitere Informationen zu unseren Dienstleistungen und Projekten, die darauf abzielen, Ihnen die bestmöglichen technologischen Lösungen zu bieten. Unsere Expertise reicht von der Entwicklung maßgeschneiderter Softwarelösungen über die Implementierung modernster Hardwaretechnologien bis hin zur Bereitstellung umfassender IT-Sicherheitslösungen.
+            </p>
+        </section>
+
+        <section class="posts"> <!-- Bereich für die Beiträge -->
+            <!-- Einzelne Beiträge mit Verzögerung der Animation -->
+            <div class="post" style="animation-delay: 0s;">
+                <img src="path/to/image1.jpg" alt="Beitragsbild 1"> <!-- Bild des ersten Beitrags -->
+                <div class="post-content"> <!-- Inhalt des ersten Beitrags -->
+                    <h2>Beitragstitel 1</h2> <!-- Titel des ersten Beitrags -->
+                    <p>Kurzbeschreibung des Beitrags 1. Klick für mehr Details.</p> <!-- Beschreibung des ersten Beitrags -->
+                </div>
+            </div>
+            <!-- Weitere Beiträge folgen mit gleicher Struktur und unterschiedlichen Verzögerungen -->
+            <div class="post" style="animation-delay: 0.2s;">
+                <img src="path/to/image2.jpg" alt="Beitragsbild 2">
+                <div class="post-content">
+                    <h2>Beitragstitel 2</h2>
+                    <p>Kurzbeschreibung des Beitrags 2. Klick für mehr Details.</p>
+                </div>
+            </div>
+            <!-- Wiederholung für alle Beiträge -->
+            <div class="post" style="animation-delay: 0.4s;">
+                <img src="path/to/image3.jpg" alt="Beitragsbild 3">
+                <div class="post-content">
+                    <h2>Beitragstitel 3</h2>
+                    <p>Kurzbeschreibung des Beitrags 3. Klick für mehr Details.</p>
+                </div>
+            </div>
+            <div class="post" style="animation-delay: 0.6s;">
+                <img src="path/to/image4.jpg" alt="Beitragsbild 4">
+                <div class="post-content">
+                    <h2>Beitragstitel 4</h2>
+                    <p>Kurzbeschreibung des Beitrags 4. Klick für mehr Details.</p>
+                </div>
+            </div>
+            <div class="post" style="animation-delay: 0.8s;">
+                <img src="path/to/image5.jpg" alt="Beitragsbild 5">
+                <div class="post-content">
+                    <h2>Beitragstitel 5</h2>
+                    <p>Kurzbeschreibung des Beitrags 5. Klick für mehr Details.</p>
+                </div>
+            </div>
+            <div class="post" style="animation-delay: 1s;">
+                <img src="path/to/image6.jpg" alt="Beitragsbild 6">
+                <div class="post-content">
+                    <h2>Beitragstitel 6</h2>
+                    <p>Kurzbeschreibung des Beitrags 6. Klick für mehr Details.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Fußbereich der Seite -->
+        <p>&copy; 2024 Rubin. Alle Rechte vorbehalten.</p> <!-- Copyright-Information -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Verlinkt das externe JavaScript-Skript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Verlinkt Bootstrap JS -->
+</body>
+</html>
