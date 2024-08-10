@@ -11,11 +11,13 @@ body {
 
 /* Begrüßungstext mit Parallax-Effekt */
 .welcome {
+    margin-top: 1000px; /* Abstand vom Header, anpassbar je nach Bedarf */
     text-align: center; /* Zentriert den Text */
     max-width: 800px; /* Maximale Breite des Bereichs */
     margin: 0 auto; /* Zentriert den Bereich horizontal */
     padding: 0 20px; /* Platz um den Text herum */
 }
+
 
 .welcome-heading {
     position: relative; /* Setzt die Position relativ zum normalen Layout */
@@ -279,7 +281,7 @@ header {
 }
 
 main {
-    padding: 20px; /* Innenabstand für den Hauptinhalt */
+    padding: 1000px; /* Innenabstand für den Hauptinhalt */
     text-align: center; /* Zentriert den Text */
 }
 
