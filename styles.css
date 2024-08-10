@@ -1,296 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Calibri:wght@300&display=swap'); /* Importiert die Schriftart "Calibri" */
+@import url('https://fonts.googleapis.com/css2?family=Calibri:wght@300&display=swap');
 
-/* Globales Styling für die gesamte Seite */
 body {
-    font-family: 'Calibri', sans-serif; /* Setzt die Schriftart */
-    margin: 0; /* Entfernt den Standardaußenabstand */
-    padding: 0; /* Entfernt den Standardinnenabstand */
-    background-color: #F6F5F1; /* Setzt die Hintergrundfarbe */
-    color: #909aa5; /* Setzt die Textfarbe */
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F1;
+    color: #909aa5;
 }
 
-/* Begrüßungstext mit Parallax-Effekt */
-.welcome {
-    margin-top: 1000px; /* Abstand vom Header, anpassbar je nach Bedarf */
-    text-align: center; /* Zentriert den Text */
-    max-width: 800px; /* Maximale Breite des Bereichs */
-    margin: 0 auto; /* Zentriert den Bereich horizontal */
-    padding: 0 20px; /* Platz um den Text herum */
-}
-
-
-.welcome-heading {
-    position: relative; /* Setzt die Position relativ zum normalen Layout */
-    animation: slideInFromLeft 2s forwards; /* Fährt die Animation ab */
-    text-align: center; /* Zentriert den Text */
-    opacity: 0; /* Anfangszustand: unsichtbar */
-    margin: 20px 0; /* Vertikaler Abstand für die Überschrift */
-    max-width: 800px; /* Maximale Breite des Texts */
-}
-
-.welcome-text {
-    position: relative; /* Setzt die Position relativ zum normalen Layout */
-    animation: slideInFromBottom 2s forwards; /* Fährt die Animation ab */
-    text-align: center; /* Zentriert den Text */
-    opacity: 0; /* Anfangszustand: unsichtbar */
-    margin: 20px 0; /* Vertikaler Abstand für den Text */
-    max-width: 800px; /* Maximale Breite des Texts */
-}
-
-/* Keyframes für den Parallax-Effekt */
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%); /* Startposition: außerhalb des Bildschirms links */
-        opacity: 0; /* Unsichtbar */
-    }
-    to {
-        transform: translateX(0); /* Endposition: normale Position */
-        opacity: 1; /* Sichtbar */
-    }
-}
-
-@keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%); /* Startposition: außerhalb des Bildschirms unten */
-        opacity: 0; /* Unsichtbar */
-    }
-    to {
-        transform: translateY(0); /* Endposition: normale Position */
-        opacity: 1; /* Sichtbar */
-    }
-}
-
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(100%); /* Startposition: außerhalb des Bildschirms rechts */
-        opacity: 0; /* Unsichtbar */
-    }
-    to {
-        transform: translateX(0); /* Endposition: normale Position */
-        opacity: 1; /* Sichtbar */
-    }
-}
-
-/* Styling für die Beiträge */
-.posts {
-    display: flex; /* Setzt den Flexbox-Layout-Modus */
-    flex-wrap: wrap; /* Inhalte umbrechen, wenn sie den Container überlaufen */
-    justify-content: center; /* Zentriert die Inhalte horizontal */
-}
-
-.post {
-    display: flex; /* Setzt den Flexbox-Layout-Modus für die Beiträge */
-    gap: 20px; /* Abstand zwischen den Inhalten */
-    border: 1px solid #909aa5; /* Setzt eine graue Umrandung */
-    border-radius: 8px; /* Rundet die Ecken ab */
-    margin: 20px; /* Außenabstand um den Beitrag */
-    padding: 10px; /* Innenabstand im Beitrag */
-    width: 100%; /* Setzt die Breite auf 100% des Containers */
-    max-width: 400px; /* Maximale Breite des Beitrags */
-    height: 200px; /* Höhe des Beitrags */
-    opacity: 0; /* Startzustand: unsichtbar */
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Glatte Transition für Sichtbarkeit und Position */
-    background-color: #FCFBF7; /* Standardmäßig weiß */
-}
-
-.post.slide-in-left {
-    transform: translateX(-100%); /* Startzustand: von links außerhalb des Bildschirms */
-}
-
-.post.slide-in-right {
-    transform: translateX(100%); /* Startzustand: von rechts außerhalb des Bildschirms */
-}
-
-.post.visible {
-    opacity: 1; /* Sichtbar */
-    transform: translateX(0); /* Endzustand: normale Position */
-}
-
-/* Hover-Effekt für die Beiträge */
-.post:hover {
-    transform: scale(1.05); /* Vergrößert den Beitrag leicht beim Hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
-}
-
-/* Styling für das Beitragsbild */
-.post img {
-    width: 200px; /* Setzt die Breite des Bildes */
-    height: 200px; /* Setzt die Höhe des Bildes */
-    object-fit: cover; /* Beschneidet das Bild, um es einzupassen */
-    border-radius: 8px; /* Rundet die Ecken des Bildes ab */
-}
-
-/* Styling für den Textausschnitt des Beitrags */
-.post-content {
-    flex: 1; /* Füllt den restlichen Platz im Beitrag aus */
-    padding: 0 20px; /* Innenabstand im Textausschnitt */
-    
-}
-
-.post-content h2 {
-    font-size: 18px; /* Schriftgröße für den Titel des Beitrags */
-}
-
-.post-content p {
-    font-size: 16px; /* Schriftgröße für den Text des Beitrags */
-}
-
-/* Allgemeine Stile */
-body, html {
-    margin: 0; /* Entfernt den Standardaußenabstand */
-    padding: 0; /* Entfernt den Standardinnenabstand */
-    font-family: Arial, sans-serif; /* Setzt die Schriftart */
-    box-sizing: border-box; /* Integriert das Box-Modell in alle Elemente */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
-    display: flex; /* Setzt den Flexbox-Layout-Modus */
-    justify-content: space-between; /* Verteilt die Inhalte im Header */
-    align-items: center; /* Zentriert die Inhalte vertikal */
-    padding: 10px 20px; /* Innenabstand im Header */
-    background-color: #F6F5F1; /* Setzt die Hintergrundfarbe */
-    color: #AFB0B6; /* Setzt die Textfarbe */
-}
-
-header {
+    background-color: #F6F5F1;
+    color: #AFB0B6;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    background-color: #F6F5F1; /* Hintergrundfarbe bleibt sichtbar */
-    opacity: 1;
-    visibility: visible;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .header-transparent {
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-
-
 
 .logo {
-    font-size: 30px; /* Schriftgröße des Logos */
-    text-decoration: none; /* Entfernt die Standardunterstreichung des Links */
-    color: #AFB0B6; /* Verwendet die Schriftfarbe des umgebenden Elements */
+    font-size: 30px;
+    text-decoration: none;
+    color: #AFB0B6;
 }
 
-.logo:hover {
-    transition: color 0.3s; /* Glatter Übergang der Farbe beim Hover */
-    cursor: pointer; /* Setzt den Mauszeiger zum Pointer */
-    color: #04A4BA; /* Farbe des Logos beim Hover */
-
+.logo a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-links {
-    list-style: none; /* Entfernt die Listenpunkte */
-    display: flex; /* Setzt den Flexbox-Layout-Modus */
-    margin: 0; /* Entfernt den Außenabstand */
-    padding: 0; /* Entfernt den Innenabstand */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
-    margin: 0 15px; /* Abstand zwischen den Navigationslinks */
+    margin: 0 15px;
 }
 
 .nav-links a {
-    color: #AFB0B6; /* Setzt die Textfarbe */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    transition: color 0.3s; /* Glatter Übergang der Farbe beim Hover */
-    font-size: 18px; /* Schriftgröße der Links */
+    color: #AFB0B6;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px;
 }
 
 .nav-links a:hover {
-    color: #04A4BA; /* Textfarbe beim Hover */
+    color: #04A4BA;
 }
 
 .social-icons {
-    display: flex; /* Setzt den Flexbox-Layout-Modus */
-    align-items: center; /* Zentriert die Inhalte vertikal */
+    display: flex;
+    align-items: center;
 }
 
 .social-icon {
-    margin-left: 15px; /* Abstand zwischen den Social-Media-Icons */
-    color: #AFB0B6; /* Setzt die Textfarbe */
-    transition: color 0.3s; /* Glatter Übergang der Farbe beim Hover */
-    font-size: 20px; /* Schriftgröße der Icons */
+    margin-left: 15px;
+    color: #AFB0B6;
+    transition: color 0.3s;
+    font-size: 20px;
 }
 
 .social-icon:hover {
-    color: #04A4BA; /* Textfarbe beim Hover */
+    color: #04A4BA;
 }
 
 .hamburger {
-    display: none; /* Startzustand: nicht sichtbar */
-    cursor: pointer; /* Setzt den Mauszeiger zum Pointer */
-    flex-direction: column; /* Ordnet die Balken vertikal an */
-    justify-content: space-between; /* Verteilt die Balken gleichmäßig */
-    height: 24px; /* Höhe des Hamburger-Icons */
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
 }
 
 .hamburger .bar {
-    width: 25px; /* Breite der Balken */
-    height: 3px; /* Höhe der Balken */
-    background-color: #AFB0B6; /* Setzt die Farbe der Balken */
-    transition: all 0.3s ease; /* Glatter Übergang bei Animationen */
+    width: 25px;
+    height: 3px;
+    background-color: #AFB0B6;
+    transition: all 0.3s ease;
 }
 
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0; /* Macht den mittleren Balken unsichtbar */
+    opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg); /* Transformiert den ersten Balken in ein X */
+    transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg); /* Transformiert den dritten Balken in ein X */
+    transform: translateY(-10px) rotate(-45deg);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) { /* Media-Query für Bildschirme bis zu 768px Breite */
+@media (max-width: 768px) {
     .nav-links, .social-icons {
-        display: none; /* Versteckt die Navigationslinks und Social-Media-Icons */
+        display: none;
     }
 
     .hamburger {
-        display: flex; /* Zeigt das Hamburger-Icon an */
+        display: flex;
     }
 
     .nav-links.active, .social-icons.active {
-        display: flex; /* Zeigt die Navigationslinks und Social-Media-Icons an */
-        flex-direction: column; /* Ordnet die Links und Icons vertikal an */
-        align-items: center; /* Zentriert die Inhalte horizontal */
-        background-color: #F6F5F1; /* Setzt die Hintergrundfarbe */
-        position: absolute; /* Positioniert das Menü absolut */
-        top: 60px; /* Setzt das Menü unter den Header */
-        right: 20px; /* Setzt das Menü rechts */
-        padding: 10px; /* Innenabstand */
-        border-radius: 8px; /* Rundet die Ecken des Menüs ab */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F6F5F1;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
     }
 
     .nav-links.active {
-        margin-top: 10px; /* Abstand nach oben */
+        margin-top: 10px;
     }
 
     .social-icons.active {
-        margin-top: 10px; /* Abstand nach oben */
+        margin-top: 10px;
     }
 }
 
 main {
-    padding: 1000px; /* Innenabstand für den Hauptinhalt */
-    text-align: center; /* Zentriert den Text */
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.welcome-heading {
+    position: relative;
+    animation: slideInFromLeft 2s forwards;
+    text-align: center;
+    opacity: 0;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+.welcome-text {
+    position: relative;
+    animation: slideInFromBottom 2s forwards;
+    text-align: center;
+    opacity: 0;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #909aa5;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    background-color: #FCFBF7;
+}
+
+.post.slide-in-left {
+    transform: translateX(-100%);
+}
+
+.post.slide-in-right {
+    transform: translateX(100%);
+}
+
+.post.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.post-content h2 {
+    font-size: 18px;
+}
+
+.post-content p {
+    font-size: 16px;
 }
 
 footer {
-    position: static; /* Positioniert den Footer statisch */
-    bottom: auto; /* Deaktiviert feste Position am unteren Rand */
-    width: 100%; /* Setzt die Breite auf 100% */
-    background-color: #F6F5F1; /* Setzt die Hintergrundfarbe */
-    color: #AFB0B6; /* Setzt die Textfarbe */
-    text-align: center; /* Zentriert den Text */
-    padding: 10px 0; /* Innenabstand oben und unten */
+    position: static;
+    bottom: auto;
+    width: 100%;
+    background-color: #F6F5F1;
+    color: #AFB0B6;
+    text-align: center;
+    padding: 10px 0;
 }

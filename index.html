@@ -1,105 +1,135 @@
 <!DOCTYPE html>
-<html lang="de"> <!-- Definiert die Sprache der Webseite als Deutsch -->
+<html lang="de"> 
 <head>
-    <meta charset="UTF-8"> <!-- Setzt das Zeichenformat auf UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Passt die Seite an die Gerätegröße an -->
-    <title>Responsive Seite</title> <!-- Titel der Webseite -->
-    <link rel="stylesheet" href="styles.css"> <!-- Verlinkt das externe CSS-Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Verlinkt Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Verlinkt Font Awesome Icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Seite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body style="background-color: #F6F5F1;"> <!-- Setzt die Hintergrundfarbe des Körpers -->
 
-    <header> <!-- Definiert den Kopfbereich der Seite -->
+<body style="background-color: #F6F5F1;">
 
-        <div class="logo"> 
-            <!-- Füge das Link-Tag hinzu und belasse das Styling wie es ist -->
-            <a href="#index" style="text-decoration: none; color: inherit;">Rubin</a>
-        </div> <!-- Ende des Containers für das Logo -->
+    <header>
+        <div class="container"> <!-- Container hinzugefügt -->
+            <div class="logo">
+                <a href="#index" style="text-decoration: none; color: inherit;">Rubin</a>
+            </div>
 
-        <nav> <!-- Navigationsleiste -->
-            <ul class="nav-links"> <!-- Liste der Navigationslinks -->
-                <li><a href="#home">Home</a></li> <!-- Link zur Startseite -->
-                <li><a href="#about">Über uns</a></li> <!-- Link zur "Über uns" Seite -->
-                <li><a href="#services">Dienstleistungen</a></li> <!-- Link zur Dienstleistungsseite -->
-                <li><a href="#contact">Kontakt</a></li> <!-- Link zur Kontaktseite -->
-            </ul>
-        </nav>
-        <div class="social-icons"> <!-- Bereich für Social-Media-Icons -->
-            <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a> <!-- GitHub Icon -->
-            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a> <!-- Twitter Icon -->
-            <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a> <!-- YouTube Icon -->
-        </div>
-        <div class="hamburger" id="hamburger"> <!-- Hamburger-Icon für mobile Navigation -->
-            <div class="bar"></div> <!-- Erste Linie des Hamburger-Icons -->
-            <div class="bar"></div> <!-- Zweite Linie des Hamburger-Icons -->
-            <div class="bar"></div> <!-- Dritte Linie des Hamburger-Icons -->
-        </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#services">Dienstleistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div> <!-- Ende des Containers -->
     </header>
 
-    <div style="height: 50px;"></div> <!-- Platzhalter für Abstand -->
+    <div style="height: 50px;"></div>
 
-        <section class="welcome"> <!-- Begrüßungsbereich -->
-            <h1 class="welcome-heading">Willkommen bei Rubin</h1> <!-- Überschrift des Begrüßungsbereichs -->
-            <p class="welcome-text"> <!-- Text im Begrüßungsbereich -->
-                Wir gestalten Ihre Zukunft in der Welt der Elektronik und IT. Unsere Projekte umfassen die neuesten Technologien und bieten innovative Lösungen, die speziell auf Ihre Bedürfnisse zugeschnitten sind. Ob es sich um die Entwicklung von Smart Home Geräten, die Implementierung von IT-Sicherheitslösungen oder die Gestaltung von benutzerfreundlichen Softwareanwendungen handelt, wir sind stets bestrebt, Ihnen die besten Ergebnisse zu liefern. Mit einem erfahrenen Team von Ingenieuren und IT-Spezialisten arbeiten wir daran, Ihre Visionen zu verwirklichen und Sie auf dem neuesten Stand der Technik zu halten. Entdecken Sie unsere Projekte, die die Grenzen der Technologie erweitern und neue Maßstäbe setzen. Lassen Sie uns gemeinsam die Zukunft gestalten! Hier finden Sie weitere Informationen zu unseren Dienstleistungen und Projekten, die darauf abzielen, Ihnen die bestmöglichen technologischen Lösungen zu bieten. Unsere Expertise reicht von der Entwicklung maßgeschneiderter Softwarelösungen über die Implementierung modernster Hardwaretechnologien bis hin zur Bereitstellung umfassender IT-Sicherheitslösungen.
-            </p>
-        </section>
+    <main>
+        <div class="container"> <!-- Container hinzugefügt -->
+            <section class="welcome">
+                <h1 class="welcome-heading">Willkommen bei Rubin</h1>
+                <p class="welcome-text">
+                    Wir gestalten Ihre Zukunft in der Welt der Elektronik und IT...
+                </p>
+            </section>
 
-        <section class="posts"> <!-- Bereich für die Beiträge -->
-            <!-- Einzelne Beiträge mit Verzögerung der Animation -->
-            <div class="post" style="animation-delay: 0s;">
-                <img src="path/to/image1.jpg" alt="Beitragsbild 1"> <!-- Bild des ersten Beitrags -->
-                <div class="post-content"> <!-- Inhalt des ersten Beitrags -->
-                    <h2>Beitragstitel 1</h2> <!-- Titel des ersten Beitrags -->
-                    <p>Kurzbeschreibung des Beitrags 1. Klick für mehr Details.</p> <!-- Beschreibung des ersten Beitrags -->
+            <section class="posts">
+                <div class="post" style="animation-delay: 0s;">
+                    <img src="path/to/image1.jpg" alt="Beitragsbild 1">
+                    <div class="post-content">
+                        <h2>Beitragstitel 1</h2>
+                        <p>Kurzbeschreibung des Beitrags 1. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Weitere Beiträge folgen mit gleicher Struktur und unterschiedlichen Verzögerungen -->
-            <div class="post" style="animation-delay: 0.2s;">
-                <img src="path/to/image2.jpg" alt="Beitragsbild 2">
-                <div class="post-content">
-                    <h2>Beitragstitel 2</h2>
-                    <p>Kurzbeschreibung des Beitrags 2. Klick für mehr Details.</p>
+
+                <div class="post" style="animation-delay: 0.2s;">
+                    <img src="path/to/image2.jpg" alt="Beitragsbild 2">
+                    <div class="post-content">
+                        <h2>Beitragstitel 2</h2>
+                        <p>Kurzbeschreibung des Beitrags 2. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Wiederholung für alle Beiträge -->
-            <div class="post" style="animation-delay: 0.4s;">
-                <img src="path/to/image3.jpg" alt="Beitragsbild 3">
-                <div class="post-content">
-                    <h2>Beitragstitel 3</h2>
-                    <p>Kurzbeschreibung des Beitrags 3. Klick für mehr Details.</p>
+
+                <div class="post" style="animation-delay: 0.4s;">
+                    <img src="path/to/image3.jpg" alt="Beitragsbild 3">
+                    <div class="post-content">
+                        <h2>Beitragstitel 3</h2>
+                        <p>Kurzbeschreibung des Beitrags 3. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post" style="animation-delay: 0.6s;">
-                <img src="path/to/image4.jpg" alt="Beitragsbild 4">
-                <div class="post-content">
-                    <h2>Beitragstitel 4</h2>
-                    <p>Kurzbeschreibung des Beitrags 4. Klick für mehr Details.</p>
+
+                <div class="post" style="animation-delay: 0.6s;">
+                    <img src="path/to/image4.jpg" alt="Beitragsbild 4">
+                    <div class="post-content">
+                        <h2>Beitragstitel 4</h2>
+                        <p>Kurzbeschreibung des Beitrags 4. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post" style="animation-delay: 0.8s;">
-                <img src="path/to/image5.jpg" alt="Beitragsbild 5">
-                <div class="post-content">
-                    <h2>Beitragstitel 5</h2>
-                    <p>Kurzbeschreibung des Beitrags 5. Klick für mehr Details.</p>
+
+                <div class="post" style="animation-delay: 0.8s;">
+                    <img src="path/to/image5.jpg" alt="Beitragsbild 5">
+                    <div class="post-content">
+                        <h2>Beitragstitel 5</h2>
+                        <p>Kurzbeschreibung des Beitrags 5. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post" style="animation-delay: 1s;">
-                <img src="path/to/image6.jpg" alt="Beitragsbild 6">
-                <div class="post-content">
-                    <h2>Beitragstitel 6</h2>
-                    <p>Kurzbeschreibung des Beitrags 6. Klick für mehr Details.</p>
+
+                <div class="post" style="animation-delay: 1s;">
+                    <img src="path/to/image6.jpg" alt="Beitragsbild 6">
+                    <div class="post-content">
+                        <h2>Beitragstitel 6</h2>
+                        <p>Kurzbeschreibung des Beitrags 6. Klick für mehr Details.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div> <!-- Ende des Containers -->
     </main>
 
-    <footer> <!-- Fußbereich der Seite -->
-        <p>&copy; 2024 Rubin. Alle Rechte vorbehalten.</p> <!-- Copyright-Information -->
+    <footer>
+        <div class="container"> <!-- Container hinzugefügt -->
+            <p>&copy; 2024 Rubin. Alle Rechte vorbehalten.</p>
+        </div> <!-- Ende des Containers -->
     </footer>
 
-    <script src="script.js"></script> <!-- Verlinkt das externe JavaScript-Skript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Verlinkt Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript zum Verstecken des Headers bei Scrollen -->
+    <script>
+        let lastScrollTop = 0;
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // При прокрутке вниз: скрываем заголовок
+                header.classList.add('header-transparent');
+            } else if (scrollTop === 0) {
+                // Когда прокручено вверх до самого верха: показываем заголовок
+                header.classList.remove('header-transparent');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // ScrollTop не может быть отрицательным
+        });
+    </script>
 </body>
 </html>
