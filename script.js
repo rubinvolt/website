@@ -21,3 +21,24 @@ document.addEventListener('scroll', function() { /* Fügt ein Event hinzu, das b
         }
     });
 });
+
+
+
+let lastScrollTop = 0;
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Beim Scrollen nach unten: Header wird transparent
+        header.classList.add('header-transparent');
+    } else if (scrollTop === 0) {
+        // Wenn bis ganz nach oben gescrollt: Header wird wieder sichtbar
+        header.classList.remove('header-transparent');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // ScrollTop darf nicht negativ werden
+});
+
+

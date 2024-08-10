@@ -150,6 +150,25 @@ header {
     color: #AFB0B6; /* Setzt die Textfarbe */
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    background-color: #F6F5F1; /* Hintergrundfarbe bleibt sichtbar */
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-transparent {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
 .logo {
     font-size: 30px; /* Schriftgröße des Logos */
     text-decoration: none; /* Entfernt die Standardunterstreichung des Links */
